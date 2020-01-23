@@ -91,8 +91,8 @@ function test5(paramx,paramy,paramz,parama,paramb){
  * Description: javascript Array(length of last)
  */
 
-function test5(paramx){
-    var x = new paramx(2018, 11, 24, 10, 33, 30, 0)
-    return x
+function test5(){
+    
+    return 
     
 }
