@@ -69,6 +69,30 @@ function test6(Date){
     
 } 
 
+/**
+ * Description: javascript Dates
+ */
+
+function test7(Date){
+    var x = new Date(2020)
+    return x;
+    
+} 
+
+/**
+ * Description: javascript Dates
+ */
+
+function test8(Date){
+    var x = new Date("December 02, 2019 12:00:00")
+    return x;
+    
+} 
+
+
+
+
+
 
 
 
