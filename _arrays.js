@@ -86,13 +86,33 @@ function test5(paramx,paramy,paramz,parama,paramb){
     return [x , y , z , a , b].length-1
     
 }
-
 /**
- * Description: javascript Array(length of last)
+ * Description: javascript Array(for loop)
  */
+function test6(paramx,paramy,paramz,parama){
+  
+    var x = [paramx,paramy,paramz,parama];
+    
+    test6 = "<ul>";
+ for(var i=0;i<=x.length-1;i++){
+      test6 += "<li>" +x[i] + "</li>";
+    }
+    test6 += "</ul>";
 
-function test5(){
-    
-    return 
-    
+    return test6
+ }
+
+
+ /**
+ * Description: javascript Array(push)
+ */
+function myFunction(paramx,paramy,paramz,parama){
+var x=[paramx,paramy,paramz,parama]
+x[x.length]="lemon";
+document.getElementById("demo8").innerHTML=x;
 }
+
+    
+    
+
+
