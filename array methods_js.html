@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array methods</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    
+</body>
+<script src="./jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script>
+    var charecters=["lisa","leo","krish","pepper"];
+    document.getElementById("demo").innerHTML=charecters;
+    console.log("charecters");// storing the array
+   
+    console.log("charecters".length);
+     // length of array
+     document.getElementById("demo1").innerHTML=charecters.length;  
+    console.log("charecters[0]")
+     // first element array
+     document.getElementById("demo2").innerHTML=charecters[0];
+    console.log("charecters".length-1) 
+    // length decrement of array
+    document.getElementById("demo3").innerHTML=charecters.length-1;
+    charecters.push("lica","lucy"); // add the elements in last
+    document.getElementById("demo4").innerHTML=charecters;
+   console.log("charecters");
+    charecters.pop();  // remove the elements in array last
+    document.getElementById("demo5").innerHTML=charecters;
+    console.log(charecters);
+    charecters.unshift("remo","robo"); // add the elements from first end
+    document.getElementById("demo6").innerHTML=charecters;
+    console.log(charecters);
+    charecters.shift(); // remove the element from first end
+    document.getElementById("demo7").innerHTML=charecters;
+    console.log(charecters);
+    var v=charecters.slice(2)
+    document.getElementById("demo8").innerHTML=v;
+    console.log(charecters);
+    charecters.splice(1, 4)
+    document.getElementById("demo9").innerHTML=charecters;
+    console.log(charecters);
+    
+    
+    
+    
+
+    
+    
+  
+    
+
+
+</script>
+
+</html>
