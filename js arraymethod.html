@@ -3,13 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js arraymethod.js"></script>
+     <script src="./js arraymethod.js"></script> 
     <link rel="stylesheet" href="./css/bootstrap.css"/>
     <script src="./jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <p>Click the button to join two arrays.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<p>Click the button to copy the first two array elements to the last two array elements.</p>
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo1"></p>
+
+<h1>Array entries()</h1>
+
+<p>Create an Iteration Object from the fruit array.</p>
+
+<p>Each entry will have a key/value pair based on the array values:</p>
+
+<p id="demo2"></p>
+
+<script>
+     var x= ["Banana", "Orange", "Apple", "Mango"];
+     var y= x.entries();
+     
+     for (x of y) {
+        document.getElementById("demo2").innerHTML += x + "<br>";
+      }
+</script>
+
+<p>Click the button to check if every element in the array has a value of 18 or more.</p>
+
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo3"></p>
+
+<p>Click the button to fill all the array elements with the value "Kiwi".</p>
+
+<button onclick="myFunction3()">Try it</button>
+
+<p id="demo4"></p>
+
+<p>Click the button to get every element in the array that has a value of 18 or more.</p>
+
+<button onclick="myFunction4()">Try it</button>
+
+<p id="demo5"></p>
+
+<p>Click the button to check get the value of the first element in the array that has a value of 18 or more.</p>
+
+<button onclick="myFunction5()">Try it</button>
+
+<p id="demo6"></p>
+
+<p>Click the button to check get the index of the first element in the array that has a value of 18 or more.</p>
+
+<button onclick="myFunction6()">Try it</button>
+
+<p id="demo7"></p>
+
+ <p>List all array items, with keys and values:</p>
+
+<p id="demo8"></p> 
+
+<script>
+    var fruits = ["apple", "orange", "cherry"];
+
+fruits.forEach(myFunction7);
+
+function myFunction7(item, index) {
     
+    document.getElementById("demo8").innerHTML += index + ":" + item + "<br>"; 
+}
+</script>
+
+<h1>Array.from()</h1>
+
+<p>Create an Array from a String:</p>
+
+<p id="demo9"></p>
+
+<script>
+    document.getElementById("demo9").innerHTML=test2("ABCDEFG")
+</script>
+
+<h1>Array includes()</h1>
+
+<p>Check if the fruit array contains "Mango":</p>
+
+<p id="demo10"></p>
+
+<script>
+    document.getElementById("demo10").innerHTML=test3(y)
+</script>
+
+<p>Click the button to display the position of the element "Apple":</p>
+
+<button onclick="myFunction8()">Try it</button>
+
+<p id="demo11"></p>
+
+<p>Click the button to check if "fruits" is an array.</p>
+
+<button onclick="myFunction9()">Try it</button>
+
+<p id="demo12"></p>
+
+<p>Click the button to join the array elements into a string.</p>
+
+<button onclick="myFunction10()">Try it</button>
+
+<p id="demo13"></p>
+
+<h1>Array keys()</h1>
+
+<p>Create an Iteration Object from the fruit array.</p>
+
+<p>The Iteration object will contain the keys of the array:</p>
+
+<p id="demo14"></p>
+
+<script>
+     var ft = ["Banana", "Orange", "Apple", "Mango"];
+    var d = ft.keys()
+    for (x of d){
+      document.getElementById("demo14").innerHTML += x + "<br>";
+    }
+  
+  
+</script>
+
+<p>Click the button to create an array, then display its length.</p>
+
+<button onclick="myFunction11()">Try it</button>
+
+<p id="demo15"></p>
+
+<p>Click the button to display the last position of the element "Apple":</p>
+
+<button onclick="myFunction12()">Try it</button>
+
+<p id="demo16"></p>
+
+
+<p>Click the button to get a new array with the full name of each person in the array.</p>
+<button onclick="myFunction13()">Try it</button> 
+
+<p>New array: <span id="demo17"></span></p>
+
+<p>Click the button to remove the last element from the array.</p>
+
+<button onclick="myFunction14()">Try it</button>
+
+<p id="demo18"></p>
+
+
 </body>
+
 </html>
